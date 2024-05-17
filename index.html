@@ -11,7 +11,7 @@
     <header>
         <div class="navbar">
             <div class="logo"><a href="#">Web dev creative</a></div>
-            <ul>
+            <ul class="links">
                 <li><a href="#">hero</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="#">services</a></li>
@@ -21,6 +21,14 @@
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            <div class="dropdown_menu ">
+                <li><a href="#">hero</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="action_btn">get started</a></li>
+
+            </div>
 
 
 
@@ -29,6 +37,25 @@
 
 
     </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars' 
+
+        }
+
+
+
+    </script>
 
     
     
