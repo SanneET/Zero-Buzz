@@ -16,18 +16,23 @@ body {
 li{
     list-style: none;
 }
-a{
+.links a{
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
+    color: #2D7918;
+    font-size: 1.5rem;
 }
 
 a:hover {
-    color: green;
+    color: #FFFFFF;
 
 }
 
 /*header*/
+
+.logo a{
+    text-decoration: none;
+    color: #2D7918;
+}
 
 header {
     position: relative;
@@ -41,6 +46,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    
 
 }
 .navbar .logo a {
@@ -51,27 +58,29 @@ header {
 .navbar .links {
     display: flex;
     gap: 2rem;
-
+    border-bottom: 2px solid #133d28; /* Tilføjer en underline */
 }
 
 .navbar .toggle_btn {
-    color: #fff;
+    color: #ffffff;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
 .action_btn {
-    background-color: orange;
+    background-color: #133d28;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
+    text-decoration: none;
+    font-weight: lighter;
 }
 .action_btn:hover {
     scale: 1.05;
@@ -79,6 +88,9 @@ header {
 }
 .action_btn:active {
     scale: 0.95;
+}
+a.action_btn {
+    color: #fff;
 }
 
 /*dropdown menu*/
@@ -95,6 +107,11 @@ header {
     overflow: hidden;
     transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+.dropdown_menu a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #2D7918;
+}
 
 .dropdown_menu.open {
     height: 240px;
@@ -106,23 +123,34 @@ header {
     align-items: center;
     justify-content: center;
 }
-.dropdown_menu .action_btn {
+.dropdown_menu li .action_btn {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
+/*hero*/
+section#hero {
+    height: calc(100ch - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
 
 /* repsonsive */
-@media (max-width: 992px) {
+@media (max-width: 1105px) {
     .navbar .links,
     .navbar .action_btn {
         display: none;
     }
-    .navbar .toggle_btn {
-        display: block;
-    }
-
     .navbar .toggle_btn {
         display: block;
     }
@@ -132,7 +160,7 @@ header {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 706px) {
     .dropdown_menu {
         left: 2rem;
         width: unset;
