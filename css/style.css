@@ -23,7 +23,7 @@ li{
 }
 
 a:hover {
-    color: #FFFFFF;
+    color: #133d28;
 
 }
 
@@ -37,6 +37,10 @@ a:hover {
 header {
     position: relative;
     padding: 0 2rem;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    color: #133d28;
 }
 .navbar {
     width: 100%;
@@ -143,6 +147,10 @@ section#hero {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+/*dropdown*/
+
+
 
 
 /* repsonsive */
