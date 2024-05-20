@@ -7,11 +7,6 @@
 
 body {
     height: 100vh; /* Sørger for at body fylder hele browserens højde */
-    background-color: black; /* Sætter en baggrundsfarve */
-    background-image: url('../img/MAINlading page.png'); /* Korrigeret sti */
-    background-size: cover; /* Sørger for at billedet dækker hele baggrunden */
-    background-repeat: no-repeat; /* Forhindrer at billedet gentages */
-    background-position: center center; /* Centrerer billedet */
 }
 li{
     list-style: none;
@@ -35,6 +30,7 @@ a:hover {
     color: #2D7918;
 }
 
+
 header {
     position: relative;
     padding: 0 2rem;
@@ -45,12 +41,12 @@ header {
 }
 .navbar {
     width: 100%;
-    height: 60px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2px solid #2D7918; /* Tilføjer en underline */
     
     
 
@@ -63,7 +59,7 @@ header {
 .navbar .links {
     display: flex;
     gap: 2rem;
-    border-bottom: 2px solid #133d28; /* Tilføjer en underline */
+    
 }
 
 .navbar .toggle_btn {
@@ -115,7 +111,7 @@ a.action_btn {
 .dropdown_menu a {
     text-decoration: none;
     font-size: 1rem;
-    color: #2D7918;
+    color: #fff;
 }
 
 .dropdown_menu.open {
@@ -153,6 +149,78 @@ section#hero {
 
 
 
+
+
+/* main */
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.hero-section {
+    height: 100vh; /* Full viewport height */
+    background-image: url('/img/webp/frontpage.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.content {
+    width: 45%;
+    text-align: center;
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    margin: 10px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
 
 /* repsonsive */
 @media (max-width: 1105px) {
