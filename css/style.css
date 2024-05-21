@@ -295,6 +295,15 @@ footer {
         font-size: 1rem;
         color:#fff
     }
+    .content-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: rgb(244, 244, 244);
+        flex-direction: column;
+        align-items: center;
+    }
+    
 
 
 
