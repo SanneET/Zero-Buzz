@@ -10,9 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+    
+
 </head>
 <body>
+    <!--Der skabes en header hvor navigationen skal være både for web og mobile-->
     <header>
+        <!--Der lavt en container med klassen navbar med hovedmenuer og submenuer inde i containeren ved ul og li-->
         <div class="navbar">
             <div class="logo"><a href="index.html">Zero Buzz</a></div>
             <ul class="links">
@@ -22,7 +26,7 @@
                         <li><a href="nyesmage.html">Nye Smage</a></li>
                     </ul>
                 </li>
-                <li><a href="#">fornøjelser uden tømmermænd</a>
+                <li><a href="#">Fornøjelser uden tømmermænd</a>
                     <ul class="dropdown">
                         <li><a href="hvorforakoholfri.html">Hvorfor alkoholfri?</a></li>
                         <li><a href="#">0.0% eller 0.5%</a></li>
@@ -38,7 +42,7 @@
                 </li>
                 <li><a href="#">ZeroBuzz:Brew</a>
                     <ul class="dropdown">
-                        <li><a href="historienomzerobuzz.html">Historien om ZeroBuzz Brew</a></li>
+                        <li><a href="historienomzerobuzz.html">ZeroBuzz:Brew historien</a></li>
                         <li><a href="#">Bæredygtighed</a></li>
                         <li><a href="#">Sammerabejdesaftaler</a></li>
                         <li><a href="#">Job i Zero Buzz</a></li>
@@ -46,17 +50,20 @@
                 
                 </li>
             </ul>
+            <!--Der er lavet et ankertag med klassen action-btn for at lave en call to action-->
             <a href="#" class="action_btn">Tilmeld nyhedsbrev</a>
+            <!--her bruge font awesome's ikoner og de bliver indsat via denne kode. det bliver en burgerbar menu-->
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            <!--Nu skabes menuen for sidebar/mobile versionen-->
             <div class="dropdown_menu">
                 <li class="headsubmenu"><a href="#">Øl</a></li>
                 <li class="submenu"><a href="alkoholfrioel.html">Alkoholfri øl</a></li>
                 <li class="submenu"><a href="nyesmage.html">Nye Smage</a></li>
 
                 <li class="headsubmenu"><a href="#">Fornøjelser uden tømmermænd</a></li>
-                <li class="submenu"><a href="historienomzerobuzz.html">Hvorfor alkoholfri?</a></li>
+                <li class="submenu"><a href="hvorforakoholfri.html">Hvorfor alkoholfri?</a></li>
                 <li class="submenu"><a href="#">0.0% eller 0.5%</a></li>
                 <li class="submenu"><a href="#">Konkurrancer</a></li>
                 
@@ -82,14 +89,15 @@
 
 
     </header>
-    
+    <!--Nu her head og navigatioensbaren kodet og nu starter indholdet på siden-->
     <main>
         
         
         <section class="hero-section">
-            <!-- Background image is set in CSS -->
+            <!-- Baggrundsbillede er sat ind i css -->
         </section>
-    
+
+        <!--Der skabes 2 container som bliver flexet i css-->
         <section class="content-section">
             <div class="content classic">
                 <h2>Den klassiske</h2>
@@ -109,6 +117,9 @@
         </section>
         
     </main>
+    <!--Der skabes en footer ved hjælp af container i container kan jeg skabe at li og p 
+    bliver flexet afhængig af mediea størrelsen-->
+    <!--Ved brug af samme teknik som i navbar får jeg små underoverskrifter og links.-->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -134,7 +145,7 @@
                     <li><a href="#">Se Fødevarestyrelsens smiley-rapporte</a></li>
                 </ul>
             </div>
-            <div class="footer-contact">
+            <div class="footer-kontakt">
                 <h3>Kontakt</h3>
                 <p>ZeroBuzz ApS</p>
                 <p>Ringvej syd 104</p>
@@ -149,15 +160,24 @@
         </div>
     </footer>
 
+    <!--Her tilføjer jeg javascript til lave en funktion for min menuknap -->
+    <!--Det togglbBtn gør er at den vælger kanppen der skal klikkes på for at åbne eller lukke en menu.-->
+    <!--toggleBtnIcon gør at den vægler det icon inde i kanppen som skal skifte mellem menubar eller kryds for luk-->
+    <!--dropDownMenu gør at den vælger dropdownmenu der skal åbnes eller lukkes-->
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')
 
+        // Tilføjer en klik-hændelse til toggleBtn. Når knappen klikkes, udføres koden inde i funktionen.
         toggleBtn.onclick = function () {
+
+             // Toggler klassen 'open' på dropDownMenu for at vise/skjule menuen
             dropDownMenu.classList.toggle('open')
+            // Tjekker om menuen er åben
             const isOpen = dropDownMenu.classList.contains('open')
 
+             // Hvis menuen er åben, vises et kryds, ellers vises burgerikonet
             toggleBtnIcon.classList = isOpen
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars' 

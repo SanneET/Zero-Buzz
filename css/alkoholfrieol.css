@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Overpass:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body {
     background-color: #fff;
-    color: #333;
+    color: #133d28;
     line-height: 1.6;
 }
 
@@ -20,6 +22,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: "Anton", sans-serif;
 }
 
 .ptekst {
@@ -28,6 +31,7 @@ h1 {
 }
 p {
     padding-bottom: 2%;
+    font-family: "Overpass" sans-serif;
 }
 
 .billedeoel {
@@ -56,6 +60,7 @@ figcaption {
     margin-top: 10px;
     font-size: 3rem;
     color: #2D7918;
+    font-family: "Anton";
 }
 
 

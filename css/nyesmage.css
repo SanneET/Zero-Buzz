@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Overpass:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.smagsvarianter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.produkt {
+    margin: 40px 0;
+}
+
+.billede {
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-image {
+    text-align: center; /* Centers the image within its container */
+}
+
+.product-image img {
+    width: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Adding space below the image */
+}
+
+.produktbeskrivelse {
+    max-width: 800px;
+}
+
+h2 {
+    color: #133d28;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.produktbeskrivelse p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+@media (max-width: 706px) {
+    .billede {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image img {
+        margin: 20px 0; /* Adding space above and below the image */
+        width: 100%;
+    }
+
+    .produktbeskrivelse {
+        text-align: left; /* Keeps the text left-aligned */
+        max-width: none;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1105px) {
+    /* Additional styling can be added here for screen sizes between 706px and 1105px if needed */
+}
+    

@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Overpass:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "pt sans" sans-serif;
 }
 
 .alkoholfri-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 3%;
 }
 
 .content-wrapper {
@@ -27,17 +30,24 @@
 }
 
 .tekstfelt {
-    max-width: 700px; /* Adjust the max-width as needed */
+    max-width: 700px;
     background-color: #133d28;
+    padding-bottom: 1%;
 }
 
+h1 {
+    color: white;
+    padding: 2%;
+    padding-bottom: 11%;
+    font-size: 4.6rem;
+}
 .ptekstfelt {
     margin-bottom: 20px;
     color: #fff;
     padding: 2%;
 }
 p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .infomationtekstbox {
@@ -77,6 +87,18 @@ aside.twocontainer {
 
 
 @media (max-width: 1105px){
+    h1 {
+        color: white;
+        padding: 1%;
+        font-size: 2rem;
+    }
+    .tekstfelt {
+        color: #fff;
+        padding-bottom: 0%;
+    }
+    p {
+        font-size: 1rem;
+    }
 
 
 }
@@ -101,6 +123,14 @@ aside.twocontainer {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .content-image {
+        width: 100%;
+        height: auto;
+        padding-left: 2%;
     }
     
 
