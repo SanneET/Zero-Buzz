@@ -23,6 +23,7 @@
 .content-image {
     width: 50%;
     height: auto;
+    padding-left: 2%;
 }
 
 .tekstfelt {
@@ -34,4 +35,30 @@
 }
 p {
     font-size: 1.4rem;
+}
+
+.infomationtekstbox {
+    background-color: #133d28;
+    width: 94%;
+    margin-bottom: 1%;
+}
+.infomationtekstbox p {
+    color: white;
+    padding-left: 3%;
+    padding-bottom: 2%;
+    padding-right: 3%;
+}
+
+.infomationtekstbox h2 {
+    color: white;
+    padding-left: 3%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}
+.informationflexcontainer {
+    display: flex;
+    justify-content: center;
+}
+.imgvariantcontainer img {
+    width: 50%;
 }
