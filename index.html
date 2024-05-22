@@ -6,21 +6,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Zero Buzz</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#">Zero Buzz</a></div>
+            <div class="logo"><a href="index.html">Zero Buzz</a></div>
             <ul class="links">
                 <li><a href="#">Øl</a>
                     <ul class="dropdown">
-                        <li><a href="#">Alkoholfri øl</a></li>
-                        <li><a href="#">Nye Smage</a></li>
+                        <li><a href="alkoholfrioel.html">Alkoholfri øl</a></li>
+                        <li><a href="nyesmage.html">Nye Smage</a></li>
                     </ul>
                 </li>
                 <li><a href="#">fornøjelser uden tømmermænd</a>
                     <ul class="dropdown">
-                        <li><a href="#">Hvorfor alkoholfri?</a></li>
+                        <li><a href="hvorforakoholfri.html">Hvorfor alkoholfri?</a></li>
                         <li><a href="#">0.0% eller 0.5%</a></li>
                         <li><a href="#">Konkurrancer</a></li>
                     </ul>
@@ -34,7 +38,7 @@
                 </li>
                 <li><a href="#">ZeroBuzz:Brew</a>
                     <ul class="dropdown">
-                        <li><a href="#">Historien om ZeroBuzz Brew</a></li>
+                        <li><a href="historienomzerobuzz.html">Historien om ZeroBuzz Brew</a></li>
                         <li><a href="#">Bæredygtighed</a></li>
                         <li><a href="#">Sammerabejdesaftaler</a></li>
                         <li><a href="#">Job i Zero Buzz</a></li>
@@ -48,11 +52,11 @@
             </div>
             <div class="dropdown_menu">
                 <li class="headsubmenu"><a href="#">Øl</a></li>
-                <li class="submenu"><a href="#">Alkoholfri øl</a></li>
-                <li class="submenu"><a href="#">Nye Smage</a></li>
+                <li class="submenu"><a href="alkoholfrioel.html">Alkoholfri øl</a></li>
+                <li class="submenu"><a href="nyesmage.html">Nye Smage</a></li>
 
                 <li class="headsubmenu"><a href="#">Fornøjelser uden tømmermænd</a></li>
-                <li class="submenu"><a href="#">Hvorfor alkoholfri?</a></li>
+                <li class="submenu"><a href="historienomzerobuzz.html">Hvorfor alkoholfri?</a></li>
                 <li class="submenu"><a href="#">0.0% eller 0.5%</a></li>
                 <li class="submenu"><a href="#">Konkurrancer</a></li>
                 
@@ -61,13 +65,13 @@
                 <li class="submenu"><a href="#">Privatpersonskontakt</a></li>
                 
                 <li class="headsubmenu"><a href="#">ZeroBuzz:Brew</a></li>
-                <li class="submenu"><a href="#">Historien om ZeroBuzz Brew</a></li>
+                <li class="submenu"><a href="historienomzerobuzz.html">Historien om ZeroBuzz Brew</a></li>
                 <li class="submenu"><a href="#">Bæredygtighed</a></li>
                 <li class="submenu"><a href="#">Sammerabejdesaftaler</a></li>
                 <li class="submenu"><a href="#">Job i Zero Buzz</a></li>
                 
                 
-                <li><a href="#" class="action_btn">Tilmeld nyhedsbrev</a></li>
+                <li class="headsubmenu"><a href="#" class="action_btn">Tilmeld nyhedsbrev</a></li>
 
             </div>
 
@@ -81,7 +85,7 @@
     
     <main>
         
-        <main>
+        
             <section class="hero-section">
                 <!-- Background image is set in CSS -->
             </section>
@@ -90,17 +94,20 @@
                 <div class="content classic">
                     <h2>Den klassiske</h2>
                     <img src="/img/webp/klassiskbeer .webp" alt="Den klassiske" class="content-image">
-                    
-                    <p>Oprindelige version Klassisk øl med 0.0% og 0.5% alkohol. For den rige og fyldige smag uden kompromiser. Nyd den til enhver tid uden de begrænsninger som er forbundet med alkohol.</p>
+                    <article class="pcontent"></article>
+                        <p>Oprindelige version Klassisk øl med 0.0% og 0.5% alkohol. For den rige og fyldige smag uden kompromiser. Nyd den til enhver tid uden de begrænsninger som er forbundet med alkohol.</p>
+                    <article class="pcontent">
                 </div>
                 <div class="content flavor">
                     <h2>Den smagfulde</h2>
                     <img src="/img/webp/beerwithtaste.webp" alt="Den smagfulde" class="content-image">
-                    
-                    <p>Vi præsenterer sødet vores seneste kreationer: Citrus, hindbær og appelsin. Frisk smag, intet alkohol. For dem der ønsker noget nyt, med et sprudlende spark af friskhed og intensitet.</p>
+                    <article class="pcontent">
+                        <p>Vi præsenterer sødet vores seneste kreationer: Citrus, hindbær og appelsin. Frisk smag, intet alkohol. For dem der ønsker noget nyt, med et sprudlende spark af friskhed og intensitet.</p>
+                    <article class="pcontent">
                 </div>
+                
             </section>
-        </main>
+        
     
         <footer>
             <div class="footer-content">
@@ -110,7 +117,8 @@
                 <div class="footer-links">
                     <h3>Øl</h3>
                     <ul>
-                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">0.0%</a></li>
+                        <li><a href="#">0.5%</a></li>
                         <li><a href="#">Citrus</a></li>
                         <li><a href="#">Hindbær</a></li>
                         <li><a href="#">Passionsfrugt</a></li>
@@ -119,19 +127,18 @@
                 <div class="footer-links">
                     <h3>Service links</h3>
                     <ul>
-                        <li><a href="#">Anvendelse</a></li>
                         <li><a href="#">Kundeservice</a></li>
                         <li><a href="#">Cookiepolitik</a></li>
                         <li><a href="#">Privatlivspolitik</a></li>
-                        <li><a href="#">Ansvar fraskrivelse</a></li>
-                        <li><a href="#">Skriftlig rapporter</a></li>
+                        <li><a href="#">Opsummering af Privatlivsnotifikation</a></li>
+                        <li><a href="#">Se Fødevarestyrelsens smiley-rapporte</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h3>Kontakt</h3>
                     <p>ZeroBuzz ApS</p>
-                    <p>Parkvej 123</p>
-                    <p>7100 Vejle</p>
+                    <p>Ringvej syd 104</p>
+                    <p>8260 Viby</p>
                     <p>Email: kontakt@zerobuzz.dk</p>
                 </div>
                 <div class="footer-social">

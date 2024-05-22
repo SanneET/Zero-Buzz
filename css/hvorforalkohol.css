@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.alkoholfri-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+
+
+.content-image {
+    width: 50%;
+    height: auto;
+}
+
+.tekstfelt {
+    max-width: 700px; /* Adjust the max-width as needed */
+}
+
+.ptekstfelt {
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.4rem;
+}
