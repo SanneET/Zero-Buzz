@@ -111,6 +111,9 @@
                 </div>
             </div>
         </section>
+
+
+
         <div class="informationflexcontainer">
             <section class="infomationtekstbox">
                 <h2>Zero Buzz alkoholfriøl</h2>
@@ -131,15 +134,73 @@
         
             <aside class="twocontainer">
                 <article class="imgvariantcontainer">
-                    <img src="/img/webp/klassisk.webp" alt="">
+                    <img src="/img/webp/klassiskflaske.webp" alt="">
                 </article>
                 <article class="imgvariantcontainer">
-                    <img src="/img/webp/smagsfulde.webp" alt="">
+                    <img class="smagsfuld" src="/img/webp/smagsfuldflaske.webp" alt="">
                 </article>
             </aside>
         
 
     </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/img/webp/logo.webp" alt="Zero Buzz Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Øl</h3>
+                <ul>
+                    <li><a href="#">0.0%</a></li>
+                    <li><a href="#">0.5%</a></li>
+                    <li><a href="#">Citrus</a></li>
+                    <li><a href="#">Hindbær</a></li>
+                    <li><a href="#">Passionsfrugt</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Service links</h3>
+                <ul>
+                    <li><a href="#">Kundeservice</a></li>
+                    <li><a href="#">Cookiepolitik</a></li>
+                    <li><a href="#">Privatlivspolitik</a></li>
+                    <li><a href="#">Opsummering af Privatlivsnotifikation</a></li>
+                    <li><a href="#">Se Fødevarestyrelsens smiley-rapporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontakt</h3>
+                <p>ZeroBuzz ApS</p>
+                <p>Ringvej syd 104</p>
+                <p>8260 Viby</p>
+                <p>Email: kontakt@zerobuzz.dk</p>
+            </div>
+            <div class="footer-social">
+                <h3>Find os</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars' 
+
+        }
+
+
+
+    </script>
 
 
     
