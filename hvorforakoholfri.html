@@ -132,15 +132,16 @@
             </section>
         </div>
 
-        
-            <aside class="twocontainer">
+        <aside class="twocontainer">
                 <article class="imgvariantcontainer">
                     <img src="/img/webp/klassiskflaske.webp" alt="">
                 </article>
                 <article class="imgvariantcontainer">
                     <img class="smagsfuld" src="/img/webp/smagsfuldflaske.webp" alt="">
                 </article>
-            </aside>
+        </aside>    
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Tilbage til toppen</button>
+            
         
 
     </main>
@@ -184,19 +185,48 @@
         </div>
     </footer>
 
+    <!--Her tilføjer jeg javascript til lave en funktion for min menuknap -->
+    <!--Det togglbBtn gør er at den vælger kanppen der skal klikkes på for at åbne eller lukke en menu.-->
+    <!--toggleBtnIcon gør at den vægler det icon inde i kanppen som skal skifte mellem menubar eller kryds for luk-->
+    <!--dropDownMenu gør at den vælger dropdownmenu der skal åbnes eller lukkes-->
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')
 
+        // Tilføjer en klik-hændelse til toggleBtn. Når knappen klikkes, udføres koden inde i funktionen.
         toggleBtn.onclick = function () {
+
+             // Toggler klassen 'open' på dropDownMenu for at vise/skjule menuen
             dropDownMenu.classList.toggle('open')
+            // Tjekker om menuen er åben
             const isOpen = dropDownMenu.classList.contains('open')
 
+             // Hvis menuen er åben, vises et kryds, ellers vises burgerikonet
             toggleBtnIcon.classList = isOpen
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars' 
 
+        }
+
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+             }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
 
