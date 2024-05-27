@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zerobuzz tilbyder alkoholfri øl med fuld smagsoplevelse. Nyd vores håndværksbryggede øl uden alkohol, perfekt for enhver anledning.">
+    <meta name="keywords" content="alkoholfri øl, alkoholfrit øl, håndværksbryg, Zerobuzz, øl uden alkohol, smagfuld øl, alkoholfri drikkevarer, festlig, farver, øl">
+    <meta name="author" content="Zerobuzz">
+    <link rel="icon" href="/img/webp/icon.webp" type="image/x-icon">
     <title>Alkoholfri øl</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -10,7 +14,8 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <!--Der lavt en container med klassen navbar med hovedmenuer og submenuer inde i containeren ved ul og li-->
+        <nav class="navbar">
             <div class="logo"><a href="index.html">Zero Buzz</a></div>
             <ul class="links">
                 <li><a href="#">Øl</a>
@@ -31,27 +36,28 @@
                         <li><a href="#">Virksomhedskontakt</a></li>
                         <li><a href="#">Privatpersonskontakt</a></li>
                     </ul>
-                
                 </li>
                 <li><a href="#">ZeroBuzz:Brew</a>
                     <ul class="dropdown">
-                        <li><a href="historienomzerobuzz.html">Historien om ZeroBuzz Brew</a></li>
+                        <li><a href="historienomzerobuzz.html">ZeroBuzz:Brew historien</a></li>
                         <li><a href="#">Bæredygtighed</a></li>
                         <li><a href="#">Sammerabejdesaftaler</a></li>
                         <li><a href="#">Job i Zero Buzz</a></li>
                     </ul>
-                
                 </li>
             </ul>
+            <!--Der er lavet et ankertag med klassen action-btn for at lave en call to action-->
             <a href="#" class="action_btn">Tilmeld nyhedsbrev</a>
-            <div class="toggle_btn">
+            <!--her bruge font awesome's ikoner og de bliver indsat via denne kode. det bliver en burgerbar menu-->
+            <button class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="dropdown_menu">
+            </button>
+            <!--Nu skabes menuen for sidebar/mobile versionen-->
+            <ul class="dropdown_menu">
                 <li class="headsubmenu"><a href="#">Øl</a></li>
                 <li class="submenu"><a href="alkoholfrioel.html">Alkoholfri øl</a></li>
                 <li class="submenu"><a href="nyesmage.html">Nye Smage</a></li>
-
+    
                 <li class="headsubmenu"><a href="#">Fornøjelser uden tømmermænd</a></li>
                 <li class="submenu"><a href="hvorforakoholfri.html">Hvorfor alkoholfri?</a></li>
                 <li class="submenu"><a href="#">0.0% eller 0.5%</a></li>
@@ -62,45 +68,37 @@
                 <li class="submenu"><a href="#">Privatpersonskontakt</a></li>
                 
                 <li class="headsubmenu"><a href="#">ZeroBuzz:Brew</a></li>
-                <li class="submenu"><a href="historienomzerobuzz.html">Historien om ZeroBuzz Brew</a></li>
+                <li class="submenu"><a href="historienomzerobuzz.html">ZeroBuzz:Brew historien</a></li>
                 <li class="submenu"><a href="#">Bæredygtighed</a></li>
                 <li class="submenu"><a href="#">Sammerabejdesaftaler</a></li>
                 <li class="submenu"><a href="#">Job i Zero Buzz</a></li>
                 
-                
                 <li class="headsubmenu"><a href="#" class="action_btn">Tilmeld nyhedsbrev</a></li>
-
-            </div>
-
-
-
-
-        </div>
-
-
+            </ul>
+        </nav>
     </header>
 
 
 
     <main>
         <div class="alkoholfrioe">
-            <h1>
-                <h1>Alkoholfri Øl</h1>
-            </h1>
+            
+            <h1>Alkoholfri Øl</h1>
+            
             <section class="ptekst">
                 <p>
-                    Hos Zerobuzz er vi stolte af at tilbyde alkoholfri øl, der kombinerer autentisk smag med sundere valg. Vores mission er at brygge øl af høj kvalitet, som man kan nyde, uanset om man vælger at undgå alkohol permanent eller blot ønsker en pause. Vi tilbyder to klassiske produkter: vores 0.0% alkoholfri øl og vores 0.5% øl. Begge varianter er skabt med omhu og dedikation for at sikre, at du får den fulde smagsoplevelse uden alkoholens virkning.
+                    <strong>Hos Zerobuzz</strong> er vi stolte af at tilbyde alkoholfri øl, der kombinerer autentisk smag med sundere valg. Vores mission er at brygge øl af høj kvalitet, som man kan nyde, uanset om man vælger at undgå alkohol permanent eller blot ønsker en pause. Vi tilbyder to klassiske produkter: vores 0.0% alkoholfri øl og vores 0.5% øl. Begge varianter er skabt med omhu og dedikation for at sikre, at du får den fulde smagsoplevelse uden alkoholens virkning.
                 </p>
                 <p>
-                    Zerobuzz 0.0% Alkoholfri Øl<br>
+                    <strong>Zerobuzz 0.0% Alkoholfri Øl</strong>
                     Vores 0.0% øl er helt fri for alkohol, men går ikke på kompromis med smagen. Den bevarer den fyldige og karakteristiske smag af traditionel øl, hvilket gør den til et perfekt valg for dem, der ønsker en autentisk øloplevelse uden alkohol.
                 </p>
                 <p>
-                    Zerobuzz 0.5% Øl<br>
+                    <strong>Zerobuzz 0.5% Øl</strong>
                     Vores 0.5% øl indeholder en minimal mængde alkohol, hvilket stadig er inden for grænserne af alkoholfri øl i mange lande. Denne variant giver en lidt dybere smagsprofil og en anelse mere kompleksitet, mens den stadig holder sig næsten alkoholfri. Perfekt for dem, der ønsker en smagsoplevelse med lavere indflydelse. Nyd smagen af traditionel øl med færre bekymringer.
                 </p>
                 <p>
-                    Med Zerobuzz får du det bedste af begge verdener – fantastisk smag uden kompromis. Skål for smagsoplevelsen!
+                    <strong>Med Zerobuzz får du</strong> det bedste af begge verdener – fantastisk smag uden kompromis. Skål for smagsoplevelsen!
                 </p>
             </section>
             <section class="billedeoel">
@@ -129,7 +127,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="/img/webp/logo.webp" alt="Zero Buzz Logo">
+                <img src="/img/webp/logowhite.webp" alt="Zero Buzz Logo">
             </div>
             <div class="footer-links">
                 <h3>Øl</h3>

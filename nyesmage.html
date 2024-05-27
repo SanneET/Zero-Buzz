@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zerobuzz tilbyder alkoholfri øl med fuld smagsoplevelse. Nyd vores håndværksbryggede øl uden alkohol, perfekt for enhver anledning.">
+    <meta name="keywords" content="alkoholfri øl, alkoholfrit øl, håndværksbryg, Zerobuzz, øl uden alkohol, smagfuld øl, alkoholfri drikkevarer, festlig, farver, øl">
+    <meta name="author" content="Zerobuzz">
+    <link rel="icon" href="/img/webp/icon.webp" type="image/x-icon">
     <title>Nye Smage</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +17,8 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <!--Der lavt en container med klassen navbar med hovedmenuer og submenuer inde i containeren ved ul og li-->
+        <nav class="navbar">
             <div class="logo"><a href="index.html">Zero Buzz</a></div>
             <ul class="links">
                 <li><a href="#">Øl</a>
@@ -34,27 +39,28 @@
                         <li><a href="#">Virksomhedskontakt</a></li>
                         <li><a href="#">Privatpersonskontakt</a></li>
                     </ul>
-                
                 </li>
                 <li><a href="#">ZeroBuzz:Brew</a>
                     <ul class="dropdown">
-                        <li><a href="historienomzerobuzz.html">Historien om ZeroBuzz Brew</a></li>
+                        <li><a href="historienomzerobuzz.html">ZeroBuzz:Brew historien</a></li>
                         <li><a href="#">Bæredygtighed</a></li>
                         <li><a href="#">Sammerabejdesaftaler</a></li>
                         <li><a href="#">Job i Zero Buzz</a></li>
                     </ul>
-                
                 </li>
             </ul>
+            <!--Der er lavet et ankertag med klassen action-btn for at lave en call to action-->
             <a href="#" class="action_btn">Tilmeld nyhedsbrev</a>
-            <div class="toggle_btn">
+            <!--her bruge font awesome's ikoner og de bliver indsat via denne kode. det bliver en burgerbar menu-->
+            <button class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="dropdown_menu">
+            </button>
+            <!--Nu skabes menuen for sidebar/mobile versionen-->
+            <ul class="dropdown_menu">
                 <li class="headsubmenu"><a href="#">Øl</a></li>
                 <li class="submenu"><a href="alkoholfrioel.html">Alkoholfri øl</a></li>
                 <li class="submenu"><a href="nyesmage.html">Nye Smage</a></li>
-
+    
                 <li class="headsubmenu"><a href="#">Fornøjelser uden tømmermænd</a></li>
                 <li class="submenu"><a href="hvorforakoholfri.html">Hvorfor alkoholfri?</a></li>
                 <li class="submenu"><a href="#">0.0% eller 0.5%</a></li>
@@ -65,22 +71,14 @@
                 <li class="submenu"><a href="#">Privatpersonskontakt</a></li>
                 
                 <li class="headsubmenu"><a href="#">ZeroBuzz:Brew</a></li>
-                <li class="submenu"><a href="historienomzerobuzz.html">Historien om ZeroBuzz Brew</a></li>
+                <li class="submenu"><a href="historienomzerobuzz.html">ZeroBuzz:Brew historien</a></li>
                 <li class="submenu"><a href="#">Bæredygtighed</a></li>
                 <li class="submenu"><a href="#">Sammerabejdesaftaler</a></li>
                 <li class="submenu"><a href="#">Job i Zero Buzz</a></li>
                 
-                
                 <li class="headsubmenu"><a href="#" class="action_btn">Tilmeld nyhedsbrev</a></li>
-
-            </div>
-
-
-
-
-        </div>
-
-
+            </ul>
+        </nav>
     </header>
 
     <main class="smagsvarianter">
@@ -132,7 +130,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="/img/webp/logo.webp" alt="Zero Buzz Logo">
+                <img src="/img/webp/logowhite.webp" alt="Zero Buzz Logo">
             </div>
             <div class="footer-links">
                 <h3>Øl</h3>
