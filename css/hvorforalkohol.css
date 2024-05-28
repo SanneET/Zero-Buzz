@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "pt sans" sans-serif;
+    font-family: "Patua One", serif;
 }
 main {
     padding-left: 15%;
@@ -48,6 +48,7 @@ h1 {
 }
 p {
     font-size: 1.2rem;
+    font-family: "Overpass", sans-serif;
 }
 
 .infomationtekstbox {

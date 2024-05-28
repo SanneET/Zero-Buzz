@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Patua+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Freeman&family=Overpass:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap');
 *{
     margin: 0;
@@ -85,17 +83,16 @@ header {
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
     text-decoration: none;
     font-weight: lighter;
     
 }
 .action_btn:hover {
-    scale: 1.05;
+    transform: scale(1);
     color: #fff;
 }
 .action_btn:active {
-    scale: 0.95;
+    transform: scale(0.9);
 }
 a.action_btn {
     color: #fff;
@@ -113,7 +110,7 @@ a.action_btn {
     backdrop-filter: blur(100px);
     border-radius: 10px;
     overflow: hidden;
-    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
 }
 .dropdown_menu a {
     text-decoration: none;
