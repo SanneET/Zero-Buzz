@@ -27,13 +27,13 @@ body {
 }
 
 .product-image {
-    text-align: center; /* Centers the image within its container */
+    text-align: center; /* Centere billedet */
 }
 
 .product-image img {
     width: 150px;
     margin-right: 20px;
-    margin-bottom: 20px; /* Adding space below the image */
+    margin-bottom: 20px; /* giver plads i bunden af billedet */
 }
 
 .produktbeskrivelse {
@@ -50,7 +50,7 @@ h2 {
     font-size: 1em;
     color: #333;
     line-height: 1.6;
-    text-align: left; /* Ensures the text is left-aligned */
+    text-align: left;
 }
 /*back to top btn*/
 #myBtn {
@@ -94,7 +94,4 @@ h2 {
     }
 }
 
-@media (max-width: 1105px) {
-    /* Additional styling can be added here for screen sizes between 706px and 1105px if needed */
-}
     
