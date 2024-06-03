@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "Patua One", serif;
 }
+body {
+    background-color: #f4f4f4;
+}
 main {
     padding-left: 15%;
     padding-right: 15%;

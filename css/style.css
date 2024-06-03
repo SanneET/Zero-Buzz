@@ -8,6 +8,7 @@
 
 body {
     height: 100vh; /* Sørger for at body fylder hele browserens højde */
+    background-color: #f4f4f4;
 }
 li{
     list-style: none;
